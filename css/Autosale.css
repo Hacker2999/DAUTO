@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-image: url("../пикчи/1612524086_106-p-serii-fon-dlya-zuma-140.jpg");
+    background-size: 100%;
+    background-attachment:scroll;
+    margin: 0;
+}
+.wrapper {
+	max-width: 900px;
+    height: 100%;
+	margin: auto;
+    margin-bottom: 0;
+    background-color:rgba(215,208,208,0.40);
+}
+nav {
+  width: 900px;
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 80px;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+
+}
+.fa {
+    color: inherit;
+    padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+.two ul {
+    background: #D4E7EE;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.two ul a {
+    color: #29838C;
+    font-size: 14pt;
+}
+.two .submenu {
+  visibility: hidden;
+  background: #AFD2DF;
+}
+.two ul li:hover .submenu {
+  visibility: visible;
+}
+.footer{
+  display: flex;
+  flex-grow: 1;
+  width: 900px;
+  height: 150px;
+  background-color: rgba(172, 169, 169, 0.726);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+}
+.footer img{
+  height: 30%;
+  margin-top: 10px;
+}
+.contact{
+  display: flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10pt;
+  margin-left: 15px;
+}
+.contact a{
+  margin-left: 5px;
+}
+.contact img{
+  margin-left: 10px;
+}
+.text3{
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12pt;
+}
+.text3_map a:visited, a:link, a:active{
+  text-decoration: none;
+  color: black;
+}
+.text3_map a:hover{
+  color: rgb(49, 138, 49);
+}
+.Carsale{
+    display: flex;
+    flex-grow: 1;
+    max-width: 900px;
+    background-color: rgba(223, 217, 217, 0.726);
+    align-content:center ;
+    margin: 10px;
+    border-radius: 10px;
+    border: #29838C;
+    border-style: dashed;
+    padding: 2px;
+}
+.text{
+    /* display: flex; */
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15pt;
+    text-align: left;
+    line-height: 1.5;
+}
+.text b{
+    font-size: 16pt;
+}
+.textlink{
+    margin-top: 60px;
+}
+.textlink a{
+    margin-left: -5px;
+    font-size: 18pt;
+    text-decoration: none;
+    color: black;
+    border: #29838C;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(41, 132, 140, 0.301);
+}
+  .textlink:hover{
+    transition: 1s;
+    transform: scale(1.2);
+  }
+
+/* СЛАЙДЕР */
+.slider {
+    float:left;
+    width:270px;
+    height:220px;
+    position:relative;
+    border-radius: 10px;
+    
+    }
+    .sliderContent {
+    float:left;
+    width:270px;
+    height:220px;
+    clear:both;
+    position:relative;
+    overflow:hidden;
+    border-radius: 10px;
+    }
+    .sliderArrows a {
+    display:block;
+    text-indent:-9999px;
+    outline:none;
+    z-index:50;
+    background-image:url(../js/gfx/prev_next.png);
+    width:42px;
+    height:42px;
+    position:absolute;
+    top:50%;
+    margin-top:-34px;
+    }
+    .prev {
+    background-position:0 0;
+    left:15px;
+    }
+    .prev:hover {
+    background-position:0 -44px;
+    }
+    .next {
+    right:15px;
+    background-position:-44px 0;
+    }
+    .next:hover {
+    background-position:-44px -44px;
+    }
+    .sliderContent .item {
+    position:absolute;
+    width:270px;
+    height:220px;
+    background:#fff;
+    border-radius: 10px;
+    }
+    .sliderContent .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .sliderBullets {
+    position:absolute;
+    bottom:0;
+    left:50%;
+    z-index:50;
+    margin-left:-45px;
+    }
+    .sliderBullets a {
+    display:block;
+    float:left;
+    text-indent:-9999px;
+    outline:none;
+    margin-left:5px;
+    width:10px;
+    height:11px;
+    background:url(../js/gfx/bullets.png) no-repeat;
+    }
+    .sliderBullets .active {
+    background-position:0 -11px;
+    }
+    .sliderContent a {
+    outline:none;
+    }
